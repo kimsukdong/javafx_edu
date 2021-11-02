@@ -114,7 +114,7 @@ public class CafeMainController {
 	void onClickOrder(ActionEvent event) throws IOException {
 		if(Main.sw.equals("on") && ((Main.position.equals("판매담당"))||(Main.position.equals("임원")))) {				
 			AnchorPane root = FXMLLoader.load(getClass().getResource("/phone/view/CafeMenu.fxml"));
-			Scene scene = new Scene(root,1500,1000);
+			Scene scene = new Scene(root,1500,800);
 			Main.primaryStage.setScene(scene);
 			Main.primaryStage.show();
 			Main.primaryStage.setTitle("주문 화면");
@@ -131,7 +131,7 @@ public class CafeMainController {
 	void onClickStatistic(ActionEvent event) throws IOException {
 		if(Main.sw.equals("on") && ((Main.position.equals("관리자"))||(Main.position.equals("임원")))) {		
 			AnchorPane root = FXMLLoader.load(getClass().getResource("/phone/view/CafeView.fxml"));
-			Scene scene = new Scene(root,1500,1000);
+			Scene scene = new Scene(root,1500,800);
 			Main.primaryStage.setScene(scene);
 			Main.primaryStage.show();
 			Main.primaryStage.setTitle("통계 화면");

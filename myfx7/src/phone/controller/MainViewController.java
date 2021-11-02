@@ -123,7 +123,7 @@ public class MainViewController {
 	@FXML
 	void onClickHelp(ActionEvent event) {
 		// JOptionPane.showMessageDialog(null,"It's a 4 programs. Address, Bus Stop, Cafe, Pizza Restaurant.");
-		infoBox("We have five programs. There are Address, Bus Stop, Cafe, Pizza and Restaurant management.",null,"Help");
+		infoBox("We have four programs. There are Address, Bus Stop, Cafe, Pizza.",null,"Help");
 	}
 	public static void infoBox(String infoMessage, String headerText, String title) {
 		Alert alert = new Alert(AlertType.CONFIRMATION);
