@@ -32,6 +32,9 @@ public class Main extends Application {
 			Parent root = FXMLLoader.load(getClass().getResource("Sample.fxml"));
 			Scene scene = new Scene(root,600,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			InputStream stream = new FileInputStream("c:/util/hoseo.jpg");
+			Image image = new Image(stream);
+			primaryStage.getIcons().add(image);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			primaryStage.setTitle("login");
