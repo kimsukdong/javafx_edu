@@ -46,8 +46,11 @@ public class Main extends Application {
 			mainLayout = FXMLLoader.load(getClass().getResource("view/MainView.fxml"));
 			Scene scene = new Scene(mainLayout,1000,700);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			InputStream stream = new FileInputStream("c:/util/hoseo.jpg");
+			Image image = new Image(stream);
+			primaryStage.getIcons().add(image);
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("ÅëÇÕ°ü¸®");
+			primaryStage.setTitle("Ã…Ã«Ã‡Ã•Â°Ã¼Â¸Â®");
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
